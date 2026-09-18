@@ -1,4 +1,4 @@
-/Example 1
+//Example 1
 #include<iostream>
 using namespace std;
 int main(){
@@ -90,32 +90,5 @@ int main(){
     display();
     dequeue();
     display();
-    return 0;
-}
-//Example 4
-#include<iostream>
-using namespace std;
-int queue[5];
-int front = 0, rear = -1;
-void enqueue(int value){
-    if(rear==4){
-        cout<<"Queue is full"<<endl;
-    }
-    else{
-        rear++;
-        queue[rear]=value;
-    }
-}
-int main(){
-    enqueue(10);
-    enqueue(20);
-    enqueue(30);
-    enqueue(40);
-    enqueue(50);
-    enqueue(60);
-    cout<<"Queue:";
-    for(int i=front;i<=rear;i++){
-        cout<<queue[i]<<" ";
-    }
     return 0;
 }
