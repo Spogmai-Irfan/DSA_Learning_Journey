@@ -32,7 +32,7 @@ public:
     {
         if (isFull())
         {
-            cout << "Deque is full!" << endl;
+            cout << "Deque is full" << endl;
             return;
         }
 
@@ -49,7 +49,7 @@ public:
     {
         if (isFull())
         {
-            cout << "Deque is full!" << endl;
+            cout << "Deque is full" << endl;
             return;
         }
 
@@ -65,7 +65,7 @@ public:
         arr[front] = value;
         count++;
 
-        cout << value << " inserted at front." << endl;
+        cout << value << " inserted at front" << endl;
         cout << "Rear = " << rear
              << " Front = " << front << endl;
     }
@@ -74,7 +74,7 @@ public:
     {
         if (isEmpty())
         {
-            cout << "Deque is empty!" << endl;
+            cout << "Deque is empty" << endl;
             return;
         }
 
@@ -100,11 +100,11 @@ public:
     {
         if (isEmpty())
         {
-            cout << "Deque is empty!" << endl;
+            cout << "Deque is empty" << endl;
             return;
         }
 
-        cout << arr[front] << " removed from front." << endl;
+        cout << arr[front] << " removed from front" << endl;
 
         if (count == 1)
         {
@@ -169,7 +169,7 @@ int main()
         switch (choice)
         {
         case 1:
-            cout << "Enter a value that you want to insert at Rear side: ";
+            cout << "Enter a value that you want to insert at Rear side ";
             cin >> value;
             dq.insertRear(value);
             break;
