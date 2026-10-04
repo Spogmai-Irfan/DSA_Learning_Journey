@@ -5,6 +5,7 @@
 using namespace std;
 using namespace chrono;
 
+// Iterative Varionacci
 vector<unsigned long long> CalculateVarionacciIterative(int n)
 {
     vector<unsigned long long> series;
@@ -12,19 +13,22 @@ vector<unsigned long long> CalculateVarionacciIterative(int n)
     if (n <= 0)
         return series;
 
+    // First value
     series.push_back(2);
 
     if (n == 1)
         return series;
 
+    // Second value
     series.push_back(2);
 
     if (n == 2)
         return series;
 
-    
+    // Third value
     series.push_back(3);
 
+    // Calculate remaining values
     for (int i = 3; i < n; i++)
     {
         unsigned long long next =
