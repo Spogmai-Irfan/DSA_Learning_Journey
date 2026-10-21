@@ -10,7 +10,7 @@ struct Node {
 Node* front = NULL;
 Node* rear = NULL;
 
-// Insert an element
+
 void enqueue(int value) {
     Node* newNode = new Node;
     newNode->data = value;
@@ -26,7 +26,7 @@ void enqueue(int value) {
     cout << value << " inserted into queue\n";
 }
 
-// Remove an element
+
 void dequeue() {
     if (front == NULL) {
         cout << "Queue is empty\n";
@@ -44,7 +44,7 @@ void dequeue() {
     delete temp;
 }
 
-// Display queue
+
 void display() {
     Node* temp = front;
 
